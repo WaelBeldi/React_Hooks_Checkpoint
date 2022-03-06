@@ -22,8 +22,11 @@ const MovieCard = ({ movie }) => {
             style={{ color: "#66fcf1" }}
           />
           <Card.Text className="movie-card-description">
-            <h5>Overview:</h5>
-            <p>{movie.description}</p>
+            <span style={{ fontSize: "20px", fontWeight: "bold" }}>
+              Overview:
+            </span>
+            <br />
+            {movie.description}
           </Card.Text>
         </Card.Body>
       </Card>
