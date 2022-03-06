@@ -21,8 +21,8 @@ const MovieList = ({ movies, filterTitle, filterRating, setMovies }) => {
                   .includes(filterTitle.toLowerCase().trim()) &&
                 movie.rating >= filterRating
             )
-            .map((movie, index) => (
-              <MovieCard movie={movie} index={index} key={index} />
+            .map((movie) => (
+              <MovieCard movie={movie} key={movie.id} />
             ))}
         </AnimatePresence>
       </motion.div>
